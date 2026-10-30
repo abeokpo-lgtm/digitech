@@ -1,0 +1,115 @@
+/* ==========================================================================
+   DIGITECH — responsive.css
+   Adaptations aux écrans plus larges (mobile-first : on ajoute, on ne retire
+   pas). Points de rupture : 640, 768, 1024, 1440 px.
+   ========================================================================== */
+
+/* ---- Petits écrans : boutons pleine largeur pour un toucher facile ---- */
+@media (max-width: 479px) {
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
+/* ---- ≥ 640 px ---- */
+@media (min-width: 640px) {
+  .grid--2,
+  .grid--3,
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- ≥ 768 px : navigation horizontale, mise en page à deux colonnes ---- */
+@media (min-width: 768px) {
+  .site-header__inner {
+    flex-wrap: nowrap;
+  }
+
+  .site-nav,
+  .js .site-nav {
+    position: static;
+    flex-basis: auto;
+    padding: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
+
+  .site-nav__list,
+  .js .site-nav__list {
+    flex-direction: row;
+    gap: var(--space-6);
+  }
+
+  .site-nav__link,
+  .js .site-nav__link {
+    padding: var(--space-2) 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    border-bottom: 0;
+  }
+
+  .js .site-nav__link::after {
+    display: block;
+  }
+
+  .site-nav__link:hover,
+  .js .site-nav__link[aria-current="page"] {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .js .nav-toggle {
+    display: none;
+  }
+
+  .brand {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .contact-layout {
+    grid-template-columns: 5fr 7fr;
+  }
+}
+
+/* ---- ≥ 1024 px ---- */
+@media (min-width: 1024px) {
+  .hero {
+    padding-top: var(--space-8);
+  }
+
+  .hero__inner {
+    grid-template-columns: 1.05fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero__media {
+    aspect-ratio: 1 / 1;
+  }
+
+  .grid--3,
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1.4fr 1fr 1.2fr;
+  }
+}
+
+/* ---- ≥ 1440 px : on garde la lecture confortable, on aère davantage ---- */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1280px;
+  }
+}

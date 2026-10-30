@@ -1,0 +1,79 @@
+/* ==========================================================================
+   DIGITECH — variables.css
+   Toutes les valeurs visuelles du site sont définies ici.
+   Pour changer une couleur, une taille ou une durée : modifiez-la ici,
+   elle sera mise à jour sur toutes les pages.
+   ========================================================================== */
+
+:root {
+  /* ---- Couleurs (palette initiale, pas une charte officielle) ---- */
+  --color-bg: #ffffff;            /* fond principal */
+  --color-bg-alt: #f5f6f8;        /* fond secondaire */
+  --color-surface: #ffffff;       /* cartes */
+  --color-text: #17181a;          /* texte principal */
+  --color-text-muted: #51555d;    /* texte secondaire (assombri pour rester lisible sur le paysage) */
+  --color-border: #e5e7eb;        /* bordures */
+  --color-accent: #1769e0;        /* accent (boutons, liens importants) */
+  --color-accent-hover: #1255b8;  /* accent au survol */
+  --color-accent-soft: #eef4fe;   /* fond d'accent très léger (contraste AA avec l'accent : 4.6) */
+  --color-on-accent: #ffffff;     /* texte posé sur l'accent */
+  --color-focus: #1769e0;         /* anneau de focus clavier */
+  --color-error: #b42318;         /* messages d'erreur (contraste AA sur blanc) */
+  --color-error-soft: #fef3f2;
+  --color-header-bg: rgba(255, 255, 255, 0.86);
+
+  /* ---- Typographie (polices système : aucun service externe) ---- */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
+  --text-xl: clamp(1.375rem, 1.2rem + 0.8vw, 1.75rem);
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+  --text-3xl: clamp(2.125rem, 1.6rem + 2.6vw, 3.5rem);
+  --text-hero: clamp(2.5rem, 1.7rem + 4vw, 4.75rem);
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.25;
+  --leading-body: 1.6;
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.14em;
+
+  /* ---- Espacements (échelle de 4 px / 8 px) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --section-space: clamp(4rem, 3rem + 5vw, 8rem);
+  --gutter: clamp(1.25rem, 0.5rem + 3.5vw, 3rem);
+
+  /* ---- Largeurs ---- */
+  --container-max: 1200px;
+  --container-narrow: 760px;
+  --header-height: 4.25rem;
+
+  /* ---- Rayons et ombres ---- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(23, 24, 26, 0.06);
+  --shadow-md: 0 10px 30px -12px rgba(23, 24, 26, 0.18);
+
+  /* ---- Animations ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 700ms;
+  --reveal-distance: 24px;
+}

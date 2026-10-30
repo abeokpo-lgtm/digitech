@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F5F8"/><stop offset="1" stop-color="#E1E6EF"/></linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1769E0"/><stop offset="1" stop-color="#7FB0FF"/></linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDE1E9"/><stop offset="1" stop-color="#BCC2CE"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <!-- Écran de bureau -->
+  <rect x="306" y="92" width="270" height="176" rx="12" fill="#17181A"/>
+  <rect x="316" y="102" width="250" height="156" rx="6" fill="url(#scr)"/>
+  <rect x="338" y="124" width="96" height="10" rx="5" fill="#fff" opacity="0.85"/>
+  <rect x="338" y="146" width="150" height="48" rx="10" fill="#fff" opacity="0.22"/>
+  <path d="M421 268H461L470 316H412Z" fill="#B9BFCB"/>
+  <rect x="384" y="316" width="114" height="10" rx="5" fill="#9AA1AF"/>
+  <!-- Ordinateur portable -->
+  <rect x="86" y="196" width="244" height="158" rx="12" fill="#17181A"/>
+  <rect x="95" y="205" width="226" height="140" rx="5" fill="#FFFFFF"/>
+  <rect x="113" y="224" width="80" height="9" rx="4.5" fill="#17181A" opacity="0.85"/>
+  <rect x="113" y="244" width="130" height="64" rx="8" fill="#1769E0" opacity="0.18"/>
+  <path d="M62 362H354L346 382a12 12 0 0 1-11 7H81a12 12 0 0 1-11-7z" fill="url(#base)"/>
+</svg>

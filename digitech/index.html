@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIGITECH | Informatique et produits électroniques</title>
+  <meta name="description" content="DIGITECH, marque d'informatique et de produits électroniques : découvrez l'univers de la marque, ses grandes catégories de produits, ses services et ses tarifs.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="DIGITECH | Informatique et produits électroniques">
+  <meta property="og:description" content="Découvrez l'univers DIGITECH : catégories de produits, services, tarifs et contact.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <script>
+    /* Active les styles « avec JavaScript » + filet de sécurité d'animation */
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      var root = document.documentElement;
+      if (!root.classList.contains('animations-ready')) root.classList.add('no-animations');
+    }, 3000);
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- LOGO TEMPORAIRE : voir README.md pour le remplacer par le vrai logo -->
+      <a class="logo" href="index.html" aria-label="DIGITECH, retour à l'accueil">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">DIGI<span>TECH</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html" aria-current="page">Accueil</a></li>
+          <li><a class="site-nav__link" href="services.html">Services</a></li>
+          <li><a class="site-nav__link" href="tarifs.html">Tarifs</a></li>
+          <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ====================== HERO ====================== -->
+    <!-- CONTENU PROVISOIRE : titre et texte d'introduction à remplacer par les textes officiels -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow intro-in" style="--intro-order: 0">Informatique &amp; électronique</p>
+          <h1 class="heading-hero intro-in" id="hero-title" style="--intro-order: 1">DIGITECH, l'univers de l'informatique et de l'électronique.</h1>
+          <p class="lead intro-in" style="--intro-order: 2">Découvrez la marque, ses grandes familles de produits et les moyens d'entrer en contact.</p>
+          <div class="btn-group intro-in" style="--intro-order: 3">
+            <a class="btn btn--primary" href="#categories">Découvrir les catégories</a>
+            <a class="btn btn--secondary" href="contact.html">Nous contacter</a>
+          </div>
+        </div>
+        <div class="hero__media intro-in intro-in--media">
+          <img src="assets/images/hero/hero.svg" width="960" height="960" fetchpriority="high"
+               alt="Illustration d'un ordinateur portable, d'un smartphone et d'un boîtier d'écouteurs">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== LA MARQUE ====================== -->
+    <!-- CONTENU PROVISOIRE : présentation neutre, sans histoire ni chiffres inventés -->
+    <section class="section" aria-labelledby="brand-title">
+      <div class="container brand">
+        <div class="reveal">
+          <p class="eyebrow">La marque</p>
+          <h2 class="brand__statement" id="brand-title">Un univers dédié au matériel informatique et aux produits électroniques.</h2>
+        </div>
+        <div class="brand__body reveal" style="--reveal-order: 1">
+          <p>DIGITECH s'inscrit dans le secteur du matériel informatique et des produits électroniques. Ce site présente la marque, ses grandes catégories de produits, ses services et ses tarifs.</p>
+          <p>Parcourez les catégories, découvrez les services et retrouvez les informations pour prendre contact.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CATÉGORIES ====================== -->
+    <!-- CATÉGORIES À CONFIRMER : structure proposée, illustrations génériques -->
+    <section class="section section--alt" id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="eyebrow">Catégories</p>
+          <h2 class="heading-section" id="categories-title">Les grandes familles de produits</h2>
+          <p class="lead">Un aperçu visuel de l'univers DIGITECH, organisé par catégories.</p>
+        </div>
+
+        <ul class="grid grid--3">
+          <li class="reveal" style="--reveal-order: 0">
+            <article class="category-card">
+              <div class="category-card__media">
+                <img src="assets/images/categories/informatique.svg" alt="" width="640" height="480" loading="lazy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="heading-card">Informatique</h3>
+                <p class="category-card__text">Matériel et composants informatiques.</p>
+              </div>
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-order: 1">
+            <article class="category-card">
+              <div class="category-card__media">
+                <img src="assets/images/categories/ordinateurs.svg" alt="" width="640" height="480" loading="lazy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="heading-card">Ordinateurs et équipements</h3>
+                <p class="category-card__text">Ordinateurs portables, de bureau et équipements associés.</p>
+              </div>
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-order: 2">
+            <article class="category-card">
+              <div class="category-card__media">
+                <img src="assets/images/categories/peripheriques.svg" alt="" width="640" height="480" loading="lazy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="heading-card">Périphériques et accessoires</h3>
+                <p class="category-card__text">Claviers, souris et accessoires du quotidien.</p>
+              </div>
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-order: 0">
+            <article class="category-card">
+              <div class="category-card__media">
+                <img src="assets/images/categories/mobile.svg" alt="" width="640" height="480" loading="lazy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="heading-card">Smartphones et accessoires mobiles</h3>
+                <p class="category-card__text">Téléphones mobiles et accessoires.</p>
+              </div>
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-order: 1">
+            <article class="category-card">
+              <div class="category-card__media">
+                <img src="assets/images/categories/audio.svg" alt="" width="640" height="480" loading="lazy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="heading-card">Audio et équipements multimédias</h3>
+                <p class="category-card__text">Casques, écouteurs et matériel audio.</p>
+              </div>
+            </article>
+          </li>
+          <li class="reveal" style="--reveal-order: 2">
+            <article class="category-card">
+              <div class="category-card__media">
+                <img src="assets/images/categories/autres.svg" alt="" width="640" height="480" loading="lazy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="heading-card">Autres équipements électroniques</h3>
+                <p class="category-card__text">Objets connectés et autres appareils électroniques.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <p class="categories__note reveal">Catégories présentées à titre indicatif, avec des illustrations génériques : il ne s'agit pas d'un catalogue de produits. La liste définitive sera confirmée par DIGITECH.</p>
+      </div>
+    </section>
+
+    <!-- ====================== SERVICES ====================== -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header reveal" style="margin-bottom: 0">
+          <p class="eyebrow">Services</p>
+          <h2 class="heading-section" id="services-title">Les services de DIGITECH</h2>
+          <p class="lead">Le détail des prestations sera présenté sur la page Services dès qu'il sera confirmé.</p>
+          <p><a class="link-arrow" href="services.html">Voir la page Services</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CONTACT ====================== -->
+    <section class="section" style="padding-top: 0" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 class="heading-section" id="cta-title">Une question ? Prenons contact.</h2>
+          <p class="cta__text">Retrouvez sur la page Contact les moyens de joindre DIGITECH.</p>
+          <a class="btn btn--primary" href="contact.html">Aller à la page Contact</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="DIGITECH, retour à l'accueil">
+            <span class="logo__mark" aria-hidden="true"></span>
+            <span class="logo__text">DIGI<span>TECH</span></span>
+          </a>
+          <p class="site-footer__text" style="margin-top: var(--space-4)">Informatique et produits électroniques.</p>
+        </div>
+        <nav aria-label="Pied de page">
+          <h2 class="site-footer__title">Navigation</h2>
+          <ul class="site-footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="site-footer__title">Coordonnées</h2>
+          <div data-footer-contact>
+            <p class="site-footer__text">Les coordonnées officielles seront publiées prochainement.</p>
+          </div>
+          <div data-footer-social hidden style="margin-top: var(--space-5)">
+            <h2 class="site-footer__title">Réseaux sociaux</h2>
+            <ul class="site-footer__links" data-social-list></ul>
+          </div>
+        </div>
+      </div>
+      <p class="site-footer__bottom">&copy; <span data-current-year>2026</span> DIGITECH. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

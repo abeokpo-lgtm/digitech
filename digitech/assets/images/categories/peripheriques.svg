@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EFF2F8"/><stop offset="1" stop-color="#DDE3F0"/></linearGradient>
+    <pattern id="keys" width="36" height="32" patternUnits="userSpaceOnUse" x="104" y="204">
+      <rect x="2" y="2" width="30" height="26" rx="6" fill="#F1F3F7" stroke="#D2D7E1"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <!-- Clavier -->
+  <rect x="76" y="176" width="372" height="190" rx="22" fill="#FFFFFF" stroke="#C9CED8" stroke-width="2"/>
+  <rect x="104" y="204" width="324" height="96" fill="url(#keys)"/>
+  <rect x="148" y="308" width="236" height="30" rx="8" fill="#F1F3F7" stroke="#D2D7E1"/>
+  <rect x="104" y="308" width="36" height="30" rx="8" fill="#1769E0" opacity="0.85"/>
+  <!-- Souris -->
+  <path d="M526 196c-38 0-66 28-66 66v54c0 38 28 66 66 66s66-28 66-66v-54c0-38-28-66-66-66z" fill="#FFFFFF" stroke="#C9CED8" stroke-width="2"/>
+  <path d="M460 262h132M526 196v66" stroke="#C9CED8" stroke-width="2" fill="none"/>
+  <rect x="518" y="214" width="16" height="30" rx="8" fill="#1769E0"/>
+</svg>
