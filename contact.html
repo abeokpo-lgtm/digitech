@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | DIGITECH</title>
+  <meta name="description" content="Contacter DIGITECH : retrouvez ici les coordonnées officielles de la marque dès leur publication, et le formulaire de contact.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Contact | DIGITECH">
+  <meta property="og:description" content="Les moyens de contacter DIGITECH.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <script>
+    /* Active les styles « avec JavaScript » + filet de sécurité d'animation */
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      var root = document.documentElement;
+      if (!root.classList.contains('animations-ready')) root.classList.add('no-animations');
+    }, 3000);
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/contact-form.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- LOGO TEMPORAIRE : voir README.md pour le remplacer par le vrai logo -->
+      <a class="logo" href="index.html" aria-label="DIGITECH, retour à l'accueil">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">DIGI<span>TECH</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Accueil</a></li>
+          <li><a class="site-nav__link" href="services.html">Services</a></li>
+          <li><a class="site-nav__link" href="tarifs.html">Tarifs</a></li>
+          <li><a class="site-nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero__inner">
+          <p class="eyebrow intro-in" style="--intro-order: 0">Contact</p>
+          <h1 class="page-hero__title intro-in" id="page-title" style="--intro-order: 1">Contacter DIGITECH</h1>
+          <p class="lead intro-in" style="--intro-order: 2">Retrouvez ici les moyens de joindre DIGITECH.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Coordonnées et formulaire">
+      <div class="container contact-layout">
+
+        <!-- COORDONNÉES OFFICIELLES : à renseigner dans js/config.js (rubrique « contact ») -->
+        <div class="reveal">
+          <h2 class="heading-card" style="margin-bottom: var(--space-5)">Coordonnées officielles</h2>
+          <div data-contact-details>
+            <div class="notice">
+              <p class="text-muted">Les coordonnées officielles de DIGITECH (téléphone, e-mail, adresse) seront publiées ici prochainement.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULAIRE : voir README.md pour le relier à un service d'envoi -->
+        <div class="contact-form-wrap reveal" style="--reveal-order: 1">
+          <h2 class="heading-card">Formulaire de contact</h2>
+
+          <p class="notice notice--accent" data-form-unavailable>
+            Ce formulaire n'est pas encore relié à un service d'envoi : pour l'instant, les messages ne sont pas transmis à DIGITECH.
+          </p>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="field">
+              <label class="field__label" for="name">Nom</label>
+              <input class="field__input" id="name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="error-name">
+              <p class="field__error" id="error-name" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="email">Adresse e-mail</label>
+              <input class="field__input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true" aria-describedby="error-email">
+              <p class="field__error" id="error-email" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="subject">Sujet <span class="field__optional">(facultatif)</span></label>
+              <input class="field__input" id="subject" name="subject" type="text">
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="message">Message</label>
+              <textarea class="field__input" id="message" name="message" rows="6" required aria-required="true" aria-describedby="error-message"></textarea>
+              <p class="field__error" id="error-message" hidden></p>
+            </div>
+
+            <div>
+              <button class="btn btn--primary btn--plain" type="submit">Envoyer le message</button>
+            </div>
+
+            <div class="form__status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="DIGITECH, retour à l'accueil">
+            <span class="logo__mark" aria-hidden="true"></span>
+            <span class="logo__text">DIGI<span>TECH</span></span>
+          </a>
+          <p class="site-footer__text" style="margin-top: var(--space-4)">Informatique et produits électroniques.</p>
+        </div>
+        <nav aria-label="Pied de page">
+          <h2 class="site-footer__title">Navigation</h2>
+          <ul class="site-footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="site-footer__title">Coordonnées</h2>
+          <div data-footer-contact>
+            <p class="site-footer__text">Les coordonnées officielles seront publiées prochainement.</p>
+          </div>
+          <div data-footer-social hidden style="margin-top: var(--space-5)">
+            <h2 class="site-footer__title">Réseaux sociaux</h2>
+            <ul class="site-footer__links" data-social-list></ul>
+          </div>
+        </div>
+      </div>
+      <p class="site-footer__bottom">&copy; <span data-current-year>2026</span> DIGITECH. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

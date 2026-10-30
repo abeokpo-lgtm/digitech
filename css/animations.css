@@ -1,0 +1,104 @@
+/* ==========================================================================
+   DIGITECH — animations.css
+   Mouvements doux, basés sur transform et opacity uniquement.
+   Le contenu reste visible sans JavaScript : les états « cachés » ne
+   s'appliquent que lorsque la classe .js est présente sur <html>.
+   ========================================================================== */
+
+/* ---- Apparition du contenu principal (au chargement de la page) ---- */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-distance));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.js .intro-in {
+  animation: rise-in var(--duration-slow) var(--ease-out) both;
+  animation-delay: calc(var(--intro-order, 0) * 110ms);
+}
+
+.js .intro-in--media {
+  animation-name: fade-scale-in;
+  animation-duration: 1000ms;
+  animation-delay: 250ms;
+}
+
+/* ---- Révélation au défilement (déclenchée par animations.js) ---- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition: opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+  transition-delay: calc(var(--reveal-order, 0) * 90ms);
+  will-change: opacity, transform;
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* ---- Filet de sécurité : si animations.js ne s'est pas chargé (voir <head>),
+        tout le contenu est affiché sans animation ---- */
+.no-animations .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- Flottement très léger du visuel d'accueil (parallaxe douce) ---- */
+.hero__media img {
+  transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.08);
+  transition: transform 120ms linear;
+}
+
+/* ---- Préférence « réduire les animations » ---- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .category-card:hover,
+  .info-card:hover {
+    transform: none;
+  }
+
+  .category-card:hover .category-card__media img {
+    transform: none;
+  }
+
+  .hero__media img {
+    transform: none;
+  }
+}
